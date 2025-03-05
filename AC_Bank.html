@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking App UI</title>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="AC_Bank.css" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0F2D52;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            border-radius: 5rem;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo img {
+            width: 120px;
+        }
+
+        .icons {
+            display: flex;
+            gap: 15px;
+            font-size: 22px;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .profile-pic {
+            background-color: #E57373;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .user-info a {
+            color: #A0C4FF;
+            text-decoration: none;
+        }
+
+        .account-section {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: 1px solid #1C4A72;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .account-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 5px solid #00A3E0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        .grid-item i {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://acledabank.com.kh/kh/assets/layout/logo3.png" alt="ACLEDA Bank Logo">
+        </div>
+        <div class="icons">
+            <i class="fas fa-headset"></i>
+            <i class="fas fa-qrcode"></i>
+        </div>
+    </div>
+
+    <div class="user-profile">
+        <div class="profile-pic">CC</div>
+        <div class="user-info">
+            <div>Hello, Chhaya</div>
+            <a href="#">Profile ></a>
+        </div>
+    </div>
+
+    <div class="account-section">
+        <div class="account-circle">
+            <i class="fas fa-wallet"></i>
+        </div>
+        <div>
+            <div>Total Balances</div>
+            <div>***** ៛</div>
+            <div>***** $</div>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item"><i class="fas fa-file-invoice"></i><br>Payments</div>
+        <div class="grid-item"><i class="fas fa-mobile-alt"></i><br>Mobile Top-up</div>
+        <div class="grid-item"><i class="fas fa-file-invoice-dollar"></i><br>Pay-Me</div>
+        <div class="grid-item"><i class="fas fa-qrcode"></i><br>Scan QR</div>
+        <div class="grid-item"><i class="fas fa-exchange-alt"></i><br>Transfers</div>
+        <div class="grid-item"><i class="fas fa-chart-line"></i><br>Deposits</div>
+        <div class="grid-item"><i class="fas fa-hand-holding-usd"></i><br>Loans</div>
+        <div class="grid-item"><i class="fas fa-bolt"></i><br>Quick Cash</div>
+    </div>
+  </body>
+</html>
